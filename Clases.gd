@@ -9,11 +9,15 @@ func _ready():
 	# Initialization here
 	pass
 
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+func _process(delta):
+	$AnimatedSprite.animation = "caminar"
+	
 
 
 func _on_Regresar_pressed():
-	get_tree().change_scene("res://main.tscn")
+	get_tree().change_scene("res://main.tscn")#cambiar de escena 
+
+
+func _on_Caminar_pressed():
+	$AnimatedSprite.animation = "caminar"#caminar es el nombre de los frames de la animacionx
+	$AnimatedSprite.play()
