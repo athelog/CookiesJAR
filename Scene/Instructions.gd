@@ -5,7 +5,7 @@ extends CanvasLayer
 # var b = "textvar"
 
 func _ready():
-	$Video.play()
+	$Video.hide()
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
@@ -18,4 +18,5 @@ func _on_Back_pressed():
 
 
 func _on_Open_door_pressed():
+	$Video.show()
 	$Video.play()
