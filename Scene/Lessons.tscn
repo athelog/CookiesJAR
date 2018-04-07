@@ -41,7 +41,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -65,7 +65,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 1, 0.996078, 0.447059, 1 )
+color = Color( 0.145098, 0.686275, 0.831373, 1 )
 
 [node name="Lessons" type="Label" parent="." index="1"]
 

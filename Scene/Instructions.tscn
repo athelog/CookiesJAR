@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Instructions.gd" type="Script" id=1]
 [ext_resource path="res://Font/Cookie Dough.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Font/FunnyKid.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://MEDIA/Videos/open-the-door_MUSIC.ogv" type="VideoStream" id=4]
+[ext_resource path="res://MEDIA/testAnimal.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -51,7 +52,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 1, 0.992157, 0.447059, 1 )
+color = Color( 0.145098, 0.686275, 0.831373, 1 )
 
 [node name="Label" type="Label" parent="." index="1"]
 
@@ -134,10 +135,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 702.0
-margin_top = 177.0
-margin_right = 1164.0
-margin_bottom = 471.0
+margin_left = 1013.0
+margin_top = 200.0
+margin_right = 1259.0
+margin_bottom = 368.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -151,6 +152,12 @@ paused = false
 expand = true
 buffering_msec = 500
 bus = "Master"
+
+[node name="Sprite" type="Sprite" parent="." index="5"]
+
+position = Vector2( 702.776, 521.894 )
+scale = Vector2( 0.361511, 0.361511 )
+texture = ExtResource( 5 )
 
 [connection signal="pressed" from="Open_door" to="." method="_on_Open_door_pressed"]
 
