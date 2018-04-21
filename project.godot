@@ -19,6 +19,10 @@ config/icon="res://icon.png"
 window/size/width=1360
 window/size/height=780
 
+[gdnative]
+
+singletons=[ "res://pythonscript.gdnlib" ]
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
