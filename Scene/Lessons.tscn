@@ -41,7 +41,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="CanvasLayer" type="CanvasLayer" index="0"]
+[node name="CanvasLayer" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -61,6 +61,7 @@ margin_top = -2.0
 margin_right = 1356.0
 margin_bottom = 778.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -78,6 +79,7 @@ margin_top = 67.0
 margin_right = 946.0
 margin_bottom = 183.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -102,6 +104,7 @@ margin_top = 250.0
 margin_right = 502.0
 margin_bottom = 349.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -128,6 +131,7 @@ margin_top = 686.0
 margin_right = 179.0
 margin_bottom = 757.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
