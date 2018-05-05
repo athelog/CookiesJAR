@@ -17,3 +17,10 @@ func _ready():
 
 func _on_Back_pressed():
 	get_tree().change_scene("res://Scene/LessonsScene/Lessons.tscn")#cambia de escena
+
+
+func _on_Area2D_body_entered( body ):
+	print (body)
+	
+	
+

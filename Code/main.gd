@@ -3,7 +3,7 @@ var userNameFld
 var userPasswordFld
 
 func _ready():
-	pass
+	$loginVideo.play()
 
 func _process(delta):#se ejecuta cada frame.
 	pass
