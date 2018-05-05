@@ -1,10 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Code/main.gd" type="Script" id=1]
 [ext_resource path="res://Font/Cookie Dough.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Font/FunnyKid.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://art/enemySwimming_1.png" type="Texture" id=4]
-[ext_resource path="res://art/enemySwimming_2.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -46,26 +44,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="SpriteFrames" id=6]
-
-animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "nadar",
-"speed": 5.0
-} ]
-
-[sub_resource type="SpriteFrames" id=7]
-
-animations = [ {
-"frames": [ null, null, null, null, null, null ],
-"loop": true,
-"name": "rueda",
-"speed": 12.0
-} ]
-_sections_unfolded = [ "Resource" ]
-
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -266,19 +245,6 @@ caret_blink = false
 caret_blink_speed = 0.65
 caret_position = 0
 _sections_unfolded = [ "Caret", "Placeholder" ]
-
-[node name="Fish" type="AnimatedSprite" parent="." index="8"]
-
-position = Vector2( 1077.55, 378.611 )
-scale = Vector2( 1.47664, 1.47664 )
-frames = SubResource( 6 )
-animation = "nadar"
-
-[node name="Carreta" type="AnimatedSprite" parent="." index="9"]
-
-position = Vector2( 729.134, 589.551 )
-frames = SubResource( 7 )
-animation = "rueda"
 
 [connection signal="pressed" from="Exit" to="." method="_on_Salir_pressed"]
 
