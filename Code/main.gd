@@ -5,7 +5,7 @@ var userPasswordFld
 func _ready():
 	pass
 
-func _process(delta):
+func _process(delta):#se ejecuta cada frame
 	pass
 
 func _on_Salir_pressed():
