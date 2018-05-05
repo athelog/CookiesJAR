@@ -1,10 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Code/main.gd" type="Script" id=1]
 [ext_resource path="res://Font/Cookie Dough.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Font/FunnyKid.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://art/enemySwimming_1.png" type="Texture" id=4]
-[ext_resource path="res://art/enemySwimming_2.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -46,14 +44,6 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="SpriteFrames" id=6]
-
-animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "nadar",
-"speed": 5.0
-} ]
 
 [node name="CanvasLayer" type="CanvasLayer" index="0"]
 
@@ -80,7 +70,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 1, 0.996078, 0.447059, 1 )
+color = Color( 0.146255, 0.687375, 0.832031, 1 )
 
 [node name="Title" type="Label" parent="." index="1"]
 
@@ -142,7 +132,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 46.0
 margin_top = 314.0
-margin_right = 251.0
+margin_right = 306.0
 margin_bottom = 362.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
@@ -257,19 +247,12 @@ caret_blink_speed = 0.65
 caret_position = 0
 _sections_unfolded = [ "Caret", "Placeholder" ]
 
-[node name="Fish" type="AnimatedSprite" parent="." index="8"]
-
-position = Vector2( 1077.55, 378.611 )
-scale = Vector2( 1.47664, 1.47664 )
-frames = SubResource( 6 )
-animation = "nadar"
-
 [connection signal="pressed" from="Exit" to="." method="_on_Salir_pressed"]
 
 [connection signal="pressed" from="Log in" to="." method="_on_Iniciar_pressed"]
 
 [connection signal="text_changed" from="LEditUser" to="." method="_on_LEditUser_text_changed"]
 
-[connection signal="text_entered" from="LEditPass" to="." method="_on_LEditPass_text_entered"]
+[connection signal="text_changed" from="LEditPass" to="." method="passFld"]
 
 
